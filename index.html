@@ -13,13 +13,14 @@
     a { text-decoration:none; }
     .eyebrow { letter-spacing:1.6px; text-transform:uppercase; }
     @media only screen and (max-width: 640px) {
-      .container { width:100% !important; border-radius:0 !important; }
-      .stack { display:block !important; width:100% !important; }
+      .container { width:100% !important; max-width:100% !important; border-radius:0 !important; }
+      .stack { display:block !important; width:100% !important; max-width:100% !important; box-sizing:border-box !important; }
       .center-m { text-align:center !important; }
-      .px { padding-left:24px !important; padding-right:24px !important; }
-      .hero-title { font-size:30px !important; line-height:36px !important; }
-      .hero-cell { padding:28px 24px 30px 24px !important; }
-      .hero-img { width:100% !important; max-width:100% !important; border-radius:20px 20px 0 0 !important; }
+      .px { padding-left:22px !important; padding-right:22px !important; }
+      .hero-table { width:100% !important; max-width:100% !important; }
+      .hero-title { font-size:26px !important; line-height:32px !important; word-break:break-word; }
+      .hero-cell { padding:24px 22px 28px 22px !important; }
+      .hero-img { width:100% !important; max-width:100% !important; height:auto !important; border-radius:20px 20px 0 0 !important; }
       .logo-appletree { width:180px !important; }
       .logo-sunrise { width:220px !important; }
       .logo-cell { padding:14px 0 !important; }
@@ -30,7 +31,7 @@
       .doc-img { width:100% !important; max-width:100% !important; height:260px !important; margin:0 auto 14px auto !important; }
       .doc-card { height:auto !important; padding:24px !important; }
       .doc-text { padding-left:0 !important; }
-      .refer-col { display:block !important; width:100% !important; padding:0 !important; }
+      .refer-col { display:block !important; width:100% !important; max-width:100% !important; box-sizing:border-box !important; padding:0 !important; }
       .refer-gap { padding-top:14px !important; }
       .clinic-cell { height:auto !important; padding:22px 18px !important; }
       .loc-line { height:auto !important; }
@@ -92,7 +93,7 @@
           <!-- Hero -->
           <tr>
             <td class="px" style="padding:22px 48px 8px 48px;">
-              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#f1fafb; border-radius:22px; overflow:hidden;">
+              <table role="presentation" class="hero-table" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#f1fafb; border-radius:22px; overflow:hidden;">
                 <tr>
                   <td class="stack" width="44%" valign="middle" style="font-size:0; line-height:0;">
                     <img class="hero-img" src="https://appletreedentalforkids.com/wp-content/uploads/2020/02/AppltreeDentalForKids-909629352.jpg" width="290" alt="Parent and child at the dentist" style="display:block; width:100%; max-width:290px; height:auto;">
